@@ -10,7 +10,8 @@
     <body>
 
 			<div id="app">
-				<p>{{ sayHello() }}</p>
+        <h1 v-once>{{ title}}</h1>
+				<p>{{ sayHello() }}</p><a v-bind:href="link">google</a>
 			</div>
         <script src="app.js"></script>
     </body>
