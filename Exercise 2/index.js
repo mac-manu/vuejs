@@ -6,6 +6,10 @@ new Vue({
         methods: {
           increase: function() {
             this.counter++;
-          }
+
+          },
+          decrease: function() {
+            this.counter--;
+          },
         }
 });
