@@ -6,11 +6,13 @@
 <body>
     <div id="app">
 
-       <button v-on:click ="increase"> Click me </button>
+       <button v-on:click ="increase(2, $event)"> Click me </button>
        <p>{{ counter }}</p>
        <button v-on:click ="decrease"> Click me to - </button>
 
-       <p v-on:mousemove="UpdateCoords">Coordenadas {{ x }} / {{ y }}</p>
+       <p v-on:mousemove="UpdateCoords">Coordenadas {{ x }} / {{ y }}Ω
+        <span v-on:mousemove.stop="">DEAD SPOT<span>
+       </p>
     </div>
     <script src="index.js"></script>
 </body>
