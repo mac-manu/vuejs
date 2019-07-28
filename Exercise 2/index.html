@@ -13,6 +13,7 @@
        <p v-on:mousemove="UpdateCoords">Coordenadas {{ x }} / {{ y }}Ω
         <span v-on:mousemove.stop="">DEAD SPOT<span>
        </p>
+       <input type="text" v-on:keyup.enter.space="alertMe">
     </div>
     <script src="index.js"></script>
 </body>

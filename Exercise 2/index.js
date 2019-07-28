@@ -17,6 +17,9 @@ new Vue({
           UpdateCoords: function(event){
             this.x = event.clientX,
             this.y = event.clientY;
+          },
+          alertMe: function(){
+            alert('Alert!');
           }
         }
 });
